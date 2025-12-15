@@ -1189,11 +1189,11 @@
 <section id="contact" class="contact contact-alt">
 	<h2 class="section-title">Kontaktujte nás</h2>
 	<div class="contact-box">
-		<p><strong>Telefón:</strong> 0915 790 845</p>
+		<p><strong>Telefón:</strong>0902 033 764</p>
 		<p>
 			<strong>WhatsApp:</strong>
 			<a
-				href="https://wa.me/421915790845"
+				href="https://wa.me/421902033764"
 				target="_blank"
 				style="font-weight: normal; text-decoration: underline;"
 			>
@@ -1420,7 +1420,7 @@ function startTypedText(text) {
     // Counter animation
 document.addEventListener('DOMContentLoaded', function () {
     const counters = [
-        { id: 'counter1', target: 9 },
+        { id: 'counter1', target: 7 },
         { id: 'counter2', target: 100, suffix: '%' },
         { id: 'counter3', target: 100, suffix: '%' }
     ];
@@ -1460,35 +1460,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-    document.getElementById('contactForm').addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        const form = e.target;
-        const formData = new FormData(form);
-
-        // Replace this with your actual Formspree endpoint
-        const endpoint = 'https://formspree.io/f/';
-
-        try {
-            const response = await fetch(endpoint, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                alert('Ďakujeme za vašu správu! Čoskoro sa vám ozveme.');
-                form.reset();
-            } else {
-                alert('Nastala chyba pri odosielaní. Skúste znova.');
-            }
-        } catch (error) {
-            console.error('Chyba:', error);
-            alert('Nastala chyba. Skontrolujte pripojenie a skúste znova.');
-        }
-    });
 
 
     </script>
